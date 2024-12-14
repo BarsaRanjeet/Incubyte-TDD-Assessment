@@ -67,4 +67,11 @@ describe('stringCalculator', () => {
         const result = Add(input);
         expect(result).toBe(expected);
     });
+
+    test('Check if it allows multiple delimiters format: //[delim1][delim2]\\n', () => {
+        const input = '//[*][%]\n1*2%3';
+        const expected = 6;
+        const result = Add(input);
+        expect(result).toBe(expected);
+    });
 })
