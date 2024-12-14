@@ -32,4 +32,11 @@ describe('stringCalculator', () => {
         const result = Add(input);
         expect(result).toBe(expected);
     });
+
+    test('Check if default delimiter is ; returns sum', () => {
+        const input = '//;\n1;2';
+        const expected = 3;
+        const result = Add(input);
+        expect(result).toBe(expected);
+    });
 })
