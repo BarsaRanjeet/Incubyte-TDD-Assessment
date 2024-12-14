@@ -54,7 +54,7 @@ describe('stringCalculator', () => {
         });
     });
 
-    test('Check if Numbers bigger than 1000 should is ignored', () => {
+    test('Check if Numbers bigger than 1000 should be ignored', () => {
         const input = '//;2;1001';
         const expected = 2;
         const result = Add(input);
