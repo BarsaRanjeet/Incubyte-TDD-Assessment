@@ -18,4 +18,11 @@ describe('stringCalculator', () => {
             expect(result).toBe(cases.expected);
         });
     });
+
+    test('Check if unknown amount of numbers returns sum', () => {
+        const input = '0,1,2,3,4,5,6,7,8,9,10';
+        const expected = 55;
+        const result = Add(input);
+        expect(result).toBe(expected);
+    });
 })
