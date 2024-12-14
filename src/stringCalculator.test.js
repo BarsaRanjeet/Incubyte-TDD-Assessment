@@ -60,4 +60,11 @@ describe('stringCalculator', () => {
         const result = Add(input);
         expect(result).toBe(expected);
     });
+
+    test('Check if format: //[delimiter]\\n returns sum', () => {
+        const input = '//[***]\n1***2***3';
+        const expected = 6;
+        const result = Add(input);
+        expect(result).toBe(expected);
+    });
 })
