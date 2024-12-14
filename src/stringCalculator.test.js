@@ -74,4 +74,11 @@ describe('stringCalculator', () => {
         const result = Add(input);
         expect(result).toBe(expected);
     });
+
+    test('Check if it handles multiple delimiters with length longer char', () => {
+        const input = '//[***][%%%]\n1***2%%%3';
+        const expected = 6;
+        const result = Add(input);
+        expect(result).toBe(expected);
+    });
 })
