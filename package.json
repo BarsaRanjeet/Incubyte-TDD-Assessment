@@ -1,0 +1,25 @@
+{
+  "name": "incubyte-tdd-assessment",
+  "description": "As part of Incubyte hiring process, need to complete an assessment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarsaRanjeet/Incubyte-TDD-Assessment.git"
+  },
+  "keywords": [
+    "Incubyte-TDD-Assessment"
+  ],
+  "author": "Ranjeet Barsa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarsaRanjeet/Incubyte-TDD-Assessment/issues"
+  },
+  "homepage": "https://github.com/BarsaRanjeet/Incubyte-TDD-Assessment#readme"
+}
