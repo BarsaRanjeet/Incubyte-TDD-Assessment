@@ -5,7 +5,7 @@ module.exports.Add = (numbers) => {
     const sum = (numbers.startsWith('//') ? numbers.substr(3) : numbers)
         .split(RegExp(delimiter)).reduce((pre, cur, _) => {
             if (parseInt(cur) < 0) negative.push(cur);
-            return cur ? parseInt(cur) + pre : pre;
+            return cur && parseInt(cur) <= 1000 ? parseInt(cur) + pre : pre;
         }, 0);
     if (negative.length)
         throw new Error(`negatives not allowed ${negative.length > 1 ? negative.toString() : ''}`.trimEnd())

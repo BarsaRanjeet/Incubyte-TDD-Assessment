@@ -47,10 +47,17 @@ describe('stringCalculator', () => {
             { input: '10,10', expected: 20 }
         ].map(cases => {
             try {
-                const result = Add(cases.input);
+                Add(cases.input);
             } catch (err) {
                 expect(err.message).toBe(cases.expected);
             }
         });
+    });
+
+    test('Check if Numbers bigger than 1000 should is ignored', () => {
+        const input = '//;2;1001';
+        const expected = 2;
+        const result = Add(input);
+        expect(result).toBe(expected);
     });
 })
