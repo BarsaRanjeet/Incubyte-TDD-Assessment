@@ -25,4 +25,11 @@ describe('stringCalculator', () => {
         const result = Add(input);
         expect(result).toBe(expected);
     });
+
+    test('Check if Add func. handles new lines between numbers instead of commas', () => {
+        const input = '1\n2,3';
+        const expected = 6;
+        const result = Add(input);
+        expect(result).toBe(expected);
+    });
 })
